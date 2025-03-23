@@ -18,13 +18,10 @@ ts_to_index = {ts: i for i, ts in enumerate(unique_timestamps)}
 # 5. Create a 'T' column mapped from the 'timestamp' column
 df_merged["T"] = df_merged["timestamp"].map(ts_to_index)
 
-# 6. (Optional) Reorganize column order to place 'T' first
-#    or keep the 'timestamp' column at the end
-#    Here, we put 'T' first and keep the original timestamp column at the end.
-cols = ["T"] + [c for c in df_merged.columns if c not in ["T", "timestamp"]] + ["timestamp"]
-df_merged = df_merged[cols]
+# 6. Remove the original 'timestamp' column
+df_merged.drop(columns=["timestamp"], inplace=True)
 
 # 7. Save the final result
 df_merged.to_csv("system_stats-interface_stats_formated_timestamp.csv", index=False)
 
-print("Merging and transformation complete. Result saved in 'system_stats-interface_stats_formated_timestamp.csv'.")
+print("Merging and transformation complete. The result is saved in 'system_stats-interface_stats_formated_timestamp.csv'.")
