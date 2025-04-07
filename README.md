@@ -76,5 +76,5 @@ If you use this repository or its scripts in your research, please cite:
 ```
 
 ## Acknowledgments
-We would like to express our sincere gratitude to Nida Meddouri [@nidameddouri] for his invaluable assistance throughout the experimental process and for sharing his expertise in Weka, which has been crucial in refining our methodology.
+We would like to express our sincere gratitude to Nida Meddouri [@nidameddouri] for his invaluable assistance throughout the experimental process and for sharing his much needed expertise in Weka, which has been crucial in refining our methodology.
 
