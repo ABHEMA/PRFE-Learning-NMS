@@ -37,6 +37,14 @@ The repository is organized as follows:
 └── src
     ├── anomaly
     │   └── anomaly_simulator.py
+    ├── experiment_analysis
+    │   ├── analysis_notebook.ipynb
+    |   |   csv-files
+    |   |   ├── weka_experiment_bayes.csv
+    |   |   └── ...
+    │   └── weka_experiment_results
+    │       ├── weka_experiment_bayes.arff
+    │       └── ...
     ├── parsing
     │   ├── clean_data_and_convert_csv_to_arff.y
     │   ├── fusion_collected_files.py
@@ -61,6 +69,7 @@ The repository is organized as follows:
   - `split_file.py`: Splits the merged dataset into four parts.
   - `clean_data_and_convert_csv_to_arff.y`: Cleans and converts the merged CSV to ARFF.
 - **src/anomaly**: Contains the anomaly simulator script to inject synthetic anomalies into the network.
+- **src/experiment_analysis**: Contains a Jupyter notebook and Weka experiment results for reproducing the statistical analysis of classification experiments.
 
 ## Bibliography
 
