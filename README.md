@@ -71,6 +71,11 @@ The repository is organized as follows:
 - **src/anomaly**: Contains the anomaly simulator script to inject synthetic anomalies into the network.
 - **src/experiment_analysis**: Contains a Jupyter notebook and Weka experiment results for reproducing the statistical analysis of classification experiments.
 
+## Demonstration Video
+
+A short demonstration of how we collect and process the telemetry data (SNMP, NetFlow) is available here:  
+🎥 [Watch the video](https://epitafr-my.sharepoint.com/:v:/g/personal/maxime_ganne_epita_fr/EUBp-xixnDVEpIfsjSFNC-IBycZBO3pXLe4xt57te3nO9w)
+
 ## Bibliography
 
 If you use this repository or its scripts in your research, please cite:
